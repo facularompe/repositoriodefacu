@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos para el encoding de caracteres y la vista en dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Oficial Newell's Old Boys</title>
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Script para cerrar el menú en dispositivos móviles al hacer clic en un enlace -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Se agrega un evento de clic a todos los enlaces dentro del menú de navegación
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                // Cuando se hace clic en un enlace, el menú se cierra
+                link.addEventListener('click', () => {
+                    document.getElementById('menu-toggle').checked = false;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="logo">
+            <!-- Imagen del logo de la tienda -->
+            <img src="logo.png" alt="Logo de Newell's Old Boys" class="logo-img" />
+            <!-- Título principal de la tienda -->
+            <h1>Newell's Old Boys</h1>
+            <!-- Descripción de la tienda con los creadores -->
+        </div>
+        
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Checkbox para mostrar y ocultar el menú en dispositivos móviles -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+            <!-- Etiqueta del icono del menú hamburguesa -->
+            <label for="menu-toggle" class="hamburger">
+                <!-- Las tres barras que componen el menú hamburguesa -->
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            
+            <!-- Enlaces de navegación -->
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección de productos -->
+        <section id="productos" class="section">
+            <h2>Productos</h2>
+            <!-- Descripción introductoria sobre los productos -->
+            <p>Descubre la mejor selección de merchandising oficial de Newell's Old Boys. Ropa, accesorios y más para los verdaderos hinchas.</p>
+            
+            <!-- Galería de productos -->
+            <div class="product-gallery">
+                <!-- Producto 1: Camiseta -->
+                <div class="product">
+                    <img src="camiseta.png" alt="Camiseta Oficial Newell's Old Boys" />
+                    <h3>Camiseta Oficial</h3>
+                    <p>Compra la camiseta oficial del club, con diseño exclusivo.</p>
+                    <p class="price">$4500</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                
+                <!-- Producto 2: Gorra -->
+                <div class="product">
+                    <img src="gorro.png" alt="Gorra Oficial Newell's Old Boys" />
+                    <h3>Gorra Oficial</h3>
+                    <p>Una gorra perfecta para mostrar tu hinchada.</p>
+                    <p class="price">$1200</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                
+                <!-- Producto 3: Mochila -->
+                <div class="product">
+                    <img src="mochila.png" alt="Mochila Oficial Newell's Old Boys" />
+                    <h3>Mochila Oficial</h3>
+                    <p>Ideal para llevar tus pertenencias mientras apoyas a Newell's.</p>
+                    <p class="price">$1800</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ofertas -->
+        <section id="ofertas" class="section">
+            <h2>Ofertas</h2>
+            <p>Revisa nuestras ofertas especiales de temporada y consigue productos con descuentos exclusivos.</p>
+        </section>
+
+        <!-- Sección de Ubicación -->
+        <section id="ubicacion" class="section">
+            <h2>Ubicación</h2>
+            <p>Visítanos en nuestra tienda física en Rosario o compra online desde cualquier lugar del país.</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si tienes dudas o consultas, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o correo electrónico.</p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Créditos de los creadores de la tienda -->
+        <p>Facundo Crema, Joaquin Caballero y Nicolás Pereyra</p>
+        
+        <!-- Sección de íconos de redes sociales -->
+        <div class="social-icons">
+            <!-- Enlaces a las redes sociales -->
+            <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
